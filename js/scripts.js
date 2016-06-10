@@ -1,7 +1,7 @@
+//  front-end Logic
 $(document).ready(function() {
   $('form#input').submit(function(event) {
     event.preventDefault();
-    // debugger;
     $(".toDelete").remove();
     var userInput = parseInt($('input#number').val());
     array=[];
@@ -11,6 +11,7 @@ $(document).ready(function() {
     }
   });
 });
+//  back-end Logic
 var array=[];
 var pingPong = function(number) {
   for (var i = 1; i <= number; i++) {
