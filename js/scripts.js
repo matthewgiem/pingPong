@@ -2,13 +2,14 @@ $(document).ready(function() {
   $('form#input').submit(function(event) {
     event.preventDefault();
     var userInput = parseInt($('input#number').val());
-    console.log(userInput);
     pingPong(userInput);
-    // $('#result').text("<li>" + pingPong() "</li>");
+    for (var i = 0; i < userInput; i++) {
+      $('#result').append("<li>" + array[i] + "</li>");
+    }
   });
 });
+var array=[];
 var pingPong = function(number) {
-  var array=[];
   for (var i = 1; i <= number; i++) {
     if (i % 15 === 0) {
       array.push("pingpong");
@@ -20,9 +21,8 @@ var pingPong = function(number) {
       array.push("pong");
     }
     else {
-          array.push(i)
+      array.push(i)
     }
   }
-  console.log(array);
-
+  return array;
 }
