@@ -16,6 +16,7 @@ Ping Pong game
 | will replace every number divisible by 3 with ping | 3  | 1.2.ping.  |
 |will replace every number divisible by 5 with pong |5 |1.2.3.4.pong.  |
 | will make sure that a number divisible by both 3 and 5 will display pingpong | element 15  |14.pingpong.16 |
+|erase the previous elements when you choose a new number to itirate to  | input 2 1.2 |input3 1.2.ping.  |
 
 
 
