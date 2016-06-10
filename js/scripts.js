@@ -1,11 +1,13 @@
 $(document).ready(function() {
   $('form#input').submit(function(event) {
     event.preventDefault();
+    // debugger;
     $(".toDelete").remove();
     var userInput = parseInt($('input#number').val());
+    array=[];
     pingPong(userInput);
     for (var i = 0; i < userInput; i++) {
-      $('#result').append("<li class='toDelete'>" + array[i] + "</li>");
+      $('#result').append("<li style='margin-left: -20px;' class='toDelete'>" + array[i] + "</li>");
     }
   });
 });

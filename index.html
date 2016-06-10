@@ -29,33 +29,53 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="navbar">
       <header>
-        <h1>Ping Pong</h1>
+        <h1>Ping-Pong</h1>
       </header>
-      <div class="container">
-        <h2>Let's Play!</h2>
-        <h3>Rules:</h3>
-        <ol>
-          <li>Number divisible by 3 become "ping"</li>
-          <li>Numbers divisible by 5 become "pong"</li>
-          <li>Numbers divisible by 15 become "pingpong"</li>
-        </ol>
-      </div>
-      <div class="container">
-        <form id="input" class="form-group">
-          <label for="number">Enter a number you with for me to iterate out to</label>
-          <input id="number" type="number" required=true max="100"min="0">
-          <button type="submit" class="btn btn-primary">Iterate</button>
-        </form>
-        <div>
-          <ul id='result'>
-          </ul>
+    </div>
+    <div id="wrapper">
+      <div class="row">
+        <div class="col-sm-3 no-float">
+          <div class="container" id="toBottom">
+            <h1>About Ping Pong</h1>
+            <h3>Created by:</h3>
+            <h4 class="white">Matthew Giem</h4>
+            <h3>GitHub Username/URL:</h3>
+            <h4><a href="https://github.com/matthewgiem">matthewgiem</a></h4>
+            <h3>Test for:</h3>
+            <h4 class="white">Arrays and Looping</h4>
+          </div>
+        </div>
+        <div class="col-sm-9 no-float">
+          <div class="container">
+            <h2>Let's Play!</h2>
+          </div>
+          <div class="container">
+            <h3>Rules:</h3>
+            <ol>
+              <li>Number divisible by 3 become "ping"</li>
+              <li>Numbers divisible by 5 become "pong"</li>
+              <li>Numbers divisible by 15 become "pingpong"</li>
+              <li>Number must be greater than 0 and less than 100 inclusive</li>
+            </ol>
+          </div>
+          <div class="container">
+            <form id="input" class="form-group">
+              <label for="number">Enter a number you with for me to iterate out to</label>
+              <input id="number" type="number" required=true max="100"min="0">
+              <button type="submit" class="btn btn-primary">Iterate</button>
+            </form>
+            <div>
+              <ul id='result'>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <footer>
-        <p>&copy; 2016 Epicodus Project Arrays and Looping, Inc.</p>
-      </footer>
     </div>
+    <footer class="navbar navbar-fixed-bottom text-center">
+      <p>&copy; 2016 Epicodus Project Arrays and Looping, Inc.</p>
+    </footer>
   </body>
 </html>
