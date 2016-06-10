@@ -13,6 +13,9 @@ var pingPong = function(number) {
     if (i % 3 === 0) {
       array.push("ping");
     }
+    else if (i % 5 === 0) {
+      array.push("pong");
+    }
     else {
           array.push(i)
     }
