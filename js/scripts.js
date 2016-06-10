@@ -10,7 +10,10 @@ $(document).ready(function() {
 var pingPong = function(number) {
   var array=[];
   for (var i = 1; i <= number; i++) {
-    if (i % 3 === 0) {
+    if (i % 15 === 0) {
+      array.push("pingpong");
+    }
+    else if (i % 3 === 0) {
       array.push("ping");
     }
     else if (i % 5 === 0) {
