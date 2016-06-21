@@ -4,7 +4,6 @@ $(document).ready(function() {
     event.preventDefault();
     $(".toDelete").remove();
     var userInput = parseInt($('input#number').val());
-    array=[];
     pingPong(userInput);
     for (var i = 0; i < userInput; i++) {
       $('#result').append("<li style='margin-left: -20px;' class='toDelete'>" + array[i] + "</li>");
@@ -12,8 +11,8 @@ $(document).ready(function() {
   });
 });
 //  back-end Logic
-var array=[];
 var pingPong = function(number) {
+  array=[];
   for (var i = 1; i <= number; i++) {
     if (i % 15 === 0) {
       array.push("pingpong");
